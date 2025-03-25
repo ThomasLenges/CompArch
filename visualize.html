@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>OoO 470 State Visualization</title>
+</head>
+
+<body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/vue@3"></script>
+
+  <div id="app">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">OoO 470 Visualizer</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+            <li class="nav-item">
+              <form class="d-flex">
+                <input class="form-control" type="file" @change="newFileSelected">
+              </form>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ SelectPrompt }}
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li v-for="i in maximumCycle">
+                  <a class="dropdown-item" @click="select(i-1)"> {{ i-1 }}</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row gap-3">
+        <div class="col">PC: {{ SimulationData.PC }}</div>
+        <div class="col">Decoded PC: {{ SimulationData.DecodedPCs }}</div>
+        <div class="col">Under Exception: {{ SimulationData.Exception }}</div>
+        <div class="col">Exception PC: {{ SimulationData.ExceptionPC }}</div>
+      </div>
+      <div class="row row gap-3">
+        <div class="col">Free List: {{ SimulationData.FreeList }}</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row gap-3 align-items-start">
+        <table class="table table-bordered caption-top col table-striped">
+          <caption>Physical Register File</caption>
+          <tr>
+            <th>ID</th>
+            <th>Value</th>
+            <th>Busy Bit</th>
+          </tr>
+          <tr v-for="(v, i) in SimulationData.PhysicalRegisterFile">
+            <td> {{ `p${i}` }}</td>
+            <td> {{ v }} </td>
+            <td> {{ SimulationData.BusyBitTable[i] }} </td>
+          </tr>
+        </table>
+
+        <table class="table table-bordered caption-top col table-striped">
+          <caption>Architectural Register File</caption>
+          <tr>
+            <th>ID</th>
+            <th>Physical ID</th>
+            <th>Value</th>
+          </tr>
+          <tr v-for="(v, i) in SimulationData.RegisterMapTable">
+            <td> {{ `x${i}` }} </td>
+            <td> {{ `p${v}` }} </td>
+            <td> {{ SimulationData.PhysicalRegisterFile[v] }} </td>
+          </tr>
+        </table>
+
+        <table class="table table-bordered caption-top col table-striped">
+          <caption>Active List</caption>
+          <tr>
+            <th>PC</th>
+            <th>Done</th>
+            <th>Exception</th>
+            <th>Logical Dest</th>
+            <th>Old Dest</th>
+          </tr>
+          <tr v-for="item in SimulationData.ActiveList">
+            <td> {{ item.PC }} </td>
+            <td> {{ item.Done }} </td>
+            <td> {{ item.Exception }} </td>
+            <td> {{ item.LogicalDestination }} </td>
+            <td> {{ item.OldDestination }} </td>
+          </tr>
+        </table>
+
+        <table class="table table-bordered caption-top col table-striped">
+          <caption>Integer Queue</caption>
+          <tr>
+            <th>PC</th>
+            <th>Dest ID</th>
+            <th>OpA Ready</th>
+            <th>OpA Tag</th>
+            <th>OpA Value</th>
+            <th>OpB Ready</th>
+            <th>OpB Tag</th>
+            <th>OpB Value</th>
+            <th>OpCode</th>
+          </tr>
+
+          <tr v-for="item in SimulationData.IntegerQueue">
+            <td> {{ item.PC }} </td>
+            <td> {{ item.DestRegister }} </td>
+            <td> {{ item.OpAIsReady }} </td>
+            <td> {{ item.OpARegTag }} </td>
+            <td> {{ item.OpAValue }} </td>
+            <td> {{ item.OpBIsReady }} </td>
+            <td> {{ item.OpBRegTag }} </td>
+            <td> {{ item.OpBValue }} </td>
+            <td> {{ item.OpCode }} </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- How to visualize the Free List? -->
+
+  <script>
+
+    let big_data = [
+      {
+        Cycle: 0,
+        PC: 0,
+        DecodedPCs: [0, 1, 2, 3],
+        Exception: false,
+        ExceptionPC: 0,
+        "ActiveList": [
+          {
+            "Done": false,
+            "Exception": false,
+            "LogicalDestination": 1,
+            "OldDestination": 1,
+            "PC": 0
+          },
+          {
+            "Done": false,
+            "Exception": false,
+            "LogicalDestination": 1,
+            "OldDestination": 32,
+            "PC": 1
+          },
+          {
+            "Done": false,
+            "Exception": false,
+            "LogicalDestination": 3,
+            "OldDestination": 3,
+            "PC": 2
+          },
+          {
+            "Done": false,
+            "Exception": false,
+            "LogicalDestination": 4,
+            "OldDestination": 4,
+            "PC": 3
+          }
+        ],
+        SelectPrompt: ""
+      },
+      {
+        Cycle: 1,
+        PC: 4,
+        DecodedPCs: [0, 1, 2, 3],
+        Exception: true,
+        ExceptionPC: 0,
+        "ActiveList": [
+          {
+            "Done": false,
+            "Exception": false,
+            "LogicalDestination": 1,
+            "OldDestination": 1,
+            "PC": 0
+          },
+          {
+            "Done": false,
+            "Exception": false,
+            "LogicalDestination": 4,
+            "OldDestination": 4,
+            "PC": 3
+          }
+        ]
+      }
+    ];
+
+    let i = 0;
+
+    Vue.createApp({
+      data() {
+        return {
+          SelectPrompt: "",
+          CurrentCycle: 0,
+          maximumCycle: 0,
+          SimulationData: big_data[i]
+        };
+      },
+
+      methods: {
+        select(n) {
+          console.log(`${n} is selected.`);
+          this.SelectPrompt = `Cycle ${n}`;
+          this.CurrentCycle = n;
+
+          this.SimulationData = big_data[n];
+        },
+
+        newFileSelected(event) {
+          let file = event.target.files;
+          if (file.length == 0) {
+            console.log("No file is selected.");
+            this.SimulationData = {};
+          } else {
+            // We have the data we want!
+            let reader = new FileReader()
+            reader.readAsText(file[0])
+
+            reader.onloadend = () => {
+              big_data = JSON.parse(reader.result);
+              this.maximumCycle = big_data.length;
+              this.select(0);
+            };
+          }
+        },
+
+        nextCycle(){
+          if (this.CurrentCycle < this.maximumCycle - 1) {
+            this.select(this.CurrentCycle + 1)
+          }
+        },
+
+        previousCycle() {
+          if (this.CurrentCycle > 0) {
+            this.select(this.CurrentCycle - 1)
+          }
+        }
+      },
+
+      mounted() {
+        document.addEventListener("keydown", (event) => {
+          if (event.code == "ArrowLeft") {
+            this.previousCycle()
+          } else if (event.code == "ArrowRight") {
+            this.nextCycle()
+          }
+        });
+      }
+    }).mount("#app");
+  </script>
+
+</body>
+
+</html>

@@ -96,10 +96,10 @@ def rename_and_dispatch(state, decoded_instructions):
         iq_entry = {
             "DestRegister": physical_rd,
             "OpAIsReady": opA_ready,
-            "OpARegTag": physical_rs1,
+            "OpARegTag": physical_rs1 if physical_rs1 > 31 else 0,
             "OpAValue": opA_value if opA_ready else 0,
             "OpBIsReady": opB_ready,
-            "OpBRegTag": physical_rs2 if imm is None else 0,
+            "OpBRegTag": physical_rs2 if (physical_rs2 is not None and (imm is None or physical_rs2 > 31)) else 0,
             "OpBValue": opB_value if opB_ready else 0,
             "OpCode": opcode,
             "PC": pc

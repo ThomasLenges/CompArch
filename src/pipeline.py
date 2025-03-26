@@ -41,10 +41,10 @@ def rename_and_dispatch(state, decoded_instructions):
     Renames and dispatches up to 4 instructions.
     Updates:
     - ActiveList
-    - BusyBitTable
+    - BusyBitTable (BBT)
     - FreeList
     - IntegerQueue
-    - RegisterMapTable
+    - RegisterMapTable (RMT)
     """
 
     for inst in decoded_instructions:
@@ -55,12 +55,14 @@ def rename_and_dispatch(state, decoded_instructions):
         imm = inst.get("imm") # Fail-safe for instruction without imm (gets None)
         pc = inst["PC"]
 
-        # 1. Check readiness of source registers
+        # Fetch source operand physical registers 
         physical_rs1 = state["RegisterMapTable"][rs1]
         physical_rs2 = state["RegisterMapTable"][rs2] if rs2 is not None else None # Fail-safe for instruction without opB (gets None) 
 
+        # Verify readiness and get source operand value
         opA_ready = True
         opA_ready = not state["BusyBitTable"][physical_rs1]
+
         opA_value = state["PhysicalRegisterFile"][physical_rs1]
 
         if imm is not None:
@@ -70,7 +72,7 @@ def rename_and_dispatch(state, decoded_instructions):
             opB_ready = not state["BusyBitTable"][physical_rs2]
             opB_value = state["PhysicalRegisterFile"][physical_rs2]
 
-        # 2. Allocate a new physical register for rd
+        # Allocate a new physical register for destination register
         if not state["FreeList"]:
             print("FreeList is empty! Stalling.")
             continue  # Could stall here, for now we skip
@@ -78,9 +80,9 @@ def rename_and_dispatch(state, decoded_instructions):
         physical_rd = state["FreeList"].pop(0)
         old_dest = state["RegisterMapTable"][rd] # For active list
         state["RegisterMapTable"][rd] = physical_rd # Update RMT after saving old value
-        state["BusyBitTable"][physical_rd] = True
+        state["BusyBitTable"][physical_rd] = True # Update BBT for newly used physical register
 
-        # 3. Update Active List
+        # Update Active List
         active_entry = {
             "Done": False,
             "Exception": False,
@@ -90,7 +92,7 @@ def rename_and_dispatch(state, decoded_instructions):
         }
         state["ActiveList"].append(active_entry)
 
-        # 4. Add to Integer Queue
+        # Update Integer Queue
         iq_entry = {
             "DestRegister": physical_rd,
             "OpAIsReady": opA_ready,

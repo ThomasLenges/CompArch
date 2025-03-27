@@ -1632,7 +1632,7 @@
         "OpARegTag": 40,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 32,
+        "OpBRegTag": 0,
         "OpBValue": 1,
         "OpCode": "add",
         "PC": 9
@@ -2053,7 +2053,7 @@
         "OpARegTag": 40,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 32,
+        "OpBRegTag": 0,
         "OpBValue": 1,
         "OpCode": "add",
         "PC": 9
@@ -2531,7 +2531,7 @@
         "OpARegTag": 40,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 32,
+        "OpBRegTag": 0,
         "OpBValue": 1,
         "OpCode": "add",
         "PC": 9
@@ -3042,7 +3042,7 @@
         "OpARegTag": 40,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 32,
+        "OpBRegTag": 0,
         "OpBValue": 1,
         "OpCode": "add",
         "PC": 9
@@ -3547,7 +3547,7 @@
         "OpARegTag": 40,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 32,
+        "OpBRegTag": 0,
         "OpBValue": 1,
         "OpCode": "add",
         "PC": 9
@@ -4041,7 +4041,7 @@
         "OpARegTag": 40,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 32,
+        "OpBRegTag": 0,
         "OpBValue": 1,
         "OpCode": "add",
         "PC": 9
@@ -4529,7 +4529,7 @@
         "OpARegTag": 40,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 32,
+        "OpBRegTag": 0,
         "OpBValue": 1,
         "OpCode": "add",
         "PC": 9
@@ -5006,7 +5006,7 @@
         "OpARegTag": 40,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 32,
+        "OpBRegTag": 0,
         "OpBValue": 1,
         "OpCode": "add",
         "PC": 9
@@ -5477,7 +5477,7 @@
         "OpARegTag": 40,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 32,
+        "OpBRegTag": 0,
         "OpBValue": 1,
         "OpCode": "add",
         "PC": 9
@@ -6911,7 +6911,7 @@
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 41,
+        "OpBRegTag": 0,
         "OpBValue": 1113,
         "OpCode": "sub",
         "PC": 16
@@ -7348,7 +7348,7 @@
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 41,
+        "OpBRegTag": 0,
         "OpBValue": 1113,
         "OpCode": "sub",
         "PC": 16
@@ -7774,7 +7774,7 @@
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 41,
+        "OpBRegTag": 0,
         "OpBValue": 1113,
         "OpCode": "sub",
         "PC": 16
@@ -8194,7 +8194,7 @@
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 41,
+        "OpBRegTag": 0,
         "OpBValue": 1113,
         "OpCode": "sub",
         "PC": 16
@@ -8603,7 +8603,7 @@
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 41,
+        "OpBRegTag": 0,
         "OpBValue": 1113,
         "OpCode": "sub",
         "PC": 16
@@ -9006,7 +9006,7 @@
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 41,
+        "OpBRegTag": 0,
         "OpBValue": 1113,
         "OpCode": "sub",
         "PC": 16
@@ -9398,7 +9398,7 @@
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 41,
+        "OpBRegTag": 0,
         "OpBValue": 1113,
         "OpCode": "sub",
         "PC": 16
@@ -9737,8 +9737,8 @@
       false
     ],
     "DecodedPCs": [],
-    "Exception": false,
-    "ExceptionPC": 0,
+    "Exception": true,
+    "ExceptionPC": 12,
     "FreeList": [
       56,
       57,
@@ -9790,7 +9790,7 @@
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 41,
+        "OpBRegTag": 0,
         "OpBValue": 1113,
         "OpCode": "sub",
         "PC": 16
@@ -9873,7 +9873,7 @@
         "PC": 23
       }
     ],
-    "PC": 24,
+    "PC": 65536,
     "PhysicalRegisterFile": [
       0,
       0,
@@ -10129,8 +10129,8 @@
       false
     ],
     "DecodedPCs": [],
-    "Exception": false,
-    "ExceptionPC": 0,
+    "Exception": true,
+    "ExceptionPC": 12,
     "FreeList": [
       56,
       57,
@@ -10160,7 +10160,7 @@
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 41,
+        "OpBRegTag": 0,
         "OpBValue": 1113,
         "OpCode": "sub",
         "PC": 16
@@ -10168,7 +10168,7 @@
       {
         "DestRegister": 49,
         "OpAIsReady": true,
-        "OpARegTag": 45,
+        "OpARegTag": 0,
         "OpAValue": 10,
         "OpBIsReady": false,
         "OpBRegTag": 48,
@@ -10182,7 +10182,7 @@
         "OpARegTag": 48,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 45,
+        "OpBRegTag": 0,
         "OpBValue": 10,
         "OpCode": "sub",
         "PC": 18
@@ -10232,7 +10232,7 @@
         "PC": 23
       }
     ],
-    "PC": 24,
+    "PC": 65536,
     "PhysicalRegisterFile": [
       0,
       0,
@@ -10488,8 +10488,8 @@
       false
     ],
     "DecodedPCs": [],
-    "Exception": false,
-    "ExceptionPC": 0,
+    "Exception": true,
+    "ExceptionPC": 12,
     "FreeList": [
       56,
       57,
@@ -10519,7 +10519,7 @@
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 41,
+        "OpBRegTag": 0,
         "OpBValue": 1113,
         "OpCode": "sub",
         "PC": 16
@@ -10527,7 +10527,7 @@
       {
         "DestRegister": 49,
         "OpAIsReady": true,
-        "OpARegTag": 45,
+        "OpARegTag": 0,
         "OpAValue": 10,
         "OpBIsReady": false,
         "OpBRegTag": 48,
@@ -10541,7 +10541,7 @@
         "OpARegTag": 48,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 45,
+        "OpBRegTag": 0,
         "OpBValue": 10,
         "OpCode": "sub",
         "PC": 18
@@ -10591,7 +10591,7 @@
         "PC": 23
       }
     ],
-    "PC": 24,
+    "PC": 65536,
     "PhysicalRegisterFile": [
       0,
       0,
@@ -10847,8 +10847,8 @@
       false
     ],
     "DecodedPCs": [],
-    "Exception": false,
-    "ExceptionPC": 0,
+    "Exception": true,
+    "ExceptionPC": 12,
     "FreeList": [
       56,
       57,
@@ -10875,7 +10875,7 @@
       {
         "DestRegister": 49,
         "OpAIsReady": true,
-        "OpARegTag": 45,
+        "OpARegTag": 0,
         "OpAValue": 10,
         "OpBIsReady": false,
         "OpBRegTag": 48,
@@ -10889,7 +10889,7 @@
         "OpARegTag": 48,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 45,
+        "OpBRegTag": 0,
         "OpBValue": 10,
         "OpCode": "sub",
         "PC": 18
@@ -10928,7 +10928,7 @@
         "PC": 23
       }
     ],
-    "PC": 24,
+    "PC": 65536,
     "PhysicalRegisterFile": [
       0,
       0,
@@ -11184,8 +11184,8 @@
       false
     ],
     "DecodedPCs": [],
-    "Exception": false,
-    "ExceptionPC": 0,
+    "Exception": true,
+    "ExceptionPC": 12,
     "FreeList": [
       56,
       57,
@@ -11212,7 +11212,7 @@
       {
         "DestRegister": 49,
         "OpAIsReady": true,
-        "OpARegTag": 45,
+        "OpARegTag": 0,
         "OpAValue": 10,
         "OpBIsReady": false,
         "OpBRegTag": 48,
@@ -11226,7 +11226,7 @@
         "OpARegTag": 48,
         "OpAValue": 0,
         "OpBIsReady": true,
-        "OpBRegTag": 45,
+        "OpBRegTag": 0,
         "OpBValue": 10,
         "OpCode": "sub",
         "PC": 18
@@ -11265,7 +11265,7 @@
         "PC": 23
       }
     ],
-    "PC": 24,
+    "PC": 65536,
     "PhysicalRegisterFile": [
       0,
       0,
@@ -11521,8 +11521,8 @@
       false
     ],
     "DecodedPCs": [],
-    "Exception": false,
-    "ExceptionPC": 0,
+    "Exception": true,
+    "ExceptionPC": 12,
     "FreeList": [
       56,
       57,
@@ -11569,7 +11569,7 @@
         "PC": 23
       }
     ],
-    "PC": 24,
+    "PC": 65536,
     "PhysicalRegisterFile": [
       0,
       0,
@@ -11825,8 +11825,8 @@
       false
     ],
     "DecodedPCs": [],
-    "Exception": false,
-    "ExceptionPC": 0,
+    "Exception": true,
+    "ExceptionPC": 12,
     "FreeList": [
       56,
       57,
@@ -11873,7 +11873,7 @@
         "PC": 23
       }
     ],
-    "PC": 24,
+    "PC": 65536,
     "PhysicalRegisterFile": [
       0,
       0,
@@ -12129,8 +12129,8 @@
       false
     ],
     "DecodedPCs": [],
-    "Exception": false,
-    "ExceptionPC": 0,
+    "Exception": true,
+    "ExceptionPC": 12,
     "FreeList": [
       56,
       57,
@@ -12154,7 +12154,7 @@
       42
     ],
     "IntegerQueue": [],
-    "PC": 24,
+    "PC": 65536,
     "PhysicalRegisterFile": [
       0,
       0,
@@ -12410,8 +12410,8 @@
       false
     ],
     "DecodedPCs": [],
-    "Exception": false,
-    "ExceptionPC": 0,
+    "Exception": true,
+    "ExceptionPC": 12,
     "FreeList": [
       56,
       57,
@@ -12435,7 +12435,7 @@
       42
     ],
     "IntegerQueue": [],
-    "PC": 24,
+    "PC": 65536,
     "PhysicalRegisterFile": [
       0,
       0,
@@ -12691,8 +12691,8 @@
       false
     ],
     "DecodedPCs": [],
-    "Exception": false,
-    "ExceptionPC": 0,
+    "Exception": true,
+    "ExceptionPC": 12,
     "FreeList": [
       56,
       57,
@@ -12716,7 +12716,7 @@
       42
     ],
     "IntegerQueue": [],
-    "PC": 24,
+    "PC": 65536,
     "PhysicalRegisterFile": [
       0,
       0,

@@ -1470,8 +1470,8 @@
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
@@ -1673,7 +1673,7 @@
       {
         "DestRegister": 45,
         "OpAIsReady": false,
-        "OpARegTag": 44,
+        "OpARegTag": 41,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -1683,9 +1683,9 @@
       },
       {
         "DestRegister": 46,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
+        "OpAIsReady": true,
+        "OpARegTag": 0,
+        "OpAValue": 4,
         "OpBIsReady": true,
         "OpBRegTag": 0,
         "OpBValue": 20,
@@ -1695,7 +1695,7 @@
       {
         "DestRegister": 47,
         "OpAIsReady": false,
-        "OpARegTag": 45,
+        "OpARegTag": 40,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -1772,10 +1772,10 @@
       0
     ],
     "RegisterMapTable": [
-      45,
+      44,
       32,
       47,
-      41,
+      45,
       46,
       5,
       6,
@@ -1874,8 +1874,8 @@
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
@@ -1903,7 +1903,7 @@
         "Done": false,
         "Exception": false,
         "LogicalDestination": 3,
-        "OldDestination": 41,
+        "OldDestination": 45,
         "PC": 17
       },
       {
@@ -2094,7 +2094,7 @@
       {
         "DestRegister": 45,
         "OpAIsReady": false,
-        "OpARegTag": 44,
+        "OpARegTag": 41,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -2103,20 +2103,9 @@
         "PC": 13
       },
       {
-        "DestRegister": 46,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 20,
-        "OpCode": "add",
-        "PC": 14
-      },
-      {
         "DestRegister": 47,
         "OpAIsReady": false,
-        "OpARegTag": 45,
+        "OpARegTag": 40,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -2130,7 +2119,7 @@
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 41,
+        "OpBRegTag": 45,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 16
@@ -2152,7 +2141,7 @@
         "OpARegTag": 48,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 45,
+        "OpBRegTag": 49,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 18
@@ -2237,7 +2226,7 @@
       0
     ],
     "RegisterMapTable": [
-      45,
+      44,
       50,
       48,
       51,
@@ -2332,8 +2321,8 @@
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
@@ -2361,7 +2350,7 @@
         "Done": false,
         "Exception": false,
         "LogicalDestination": 3,
-        "OldDestination": 41,
+        "OldDestination": 45,
         "PC": 17
       },
       {
@@ -2381,28 +2370,28 @@
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 45,
+        "LogicalDestination": 4,
+        "OldDestination": 46,
         "PC": 20
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 52,
         "PC": 21
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 53,
         "PC": 22
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 54,
         "PC": 23
       }
@@ -2572,7 +2561,7 @@
       {
         "DestRegister": 45,
         "OpAIsReady": false,
-        "OpARegTag": 44,
+        "OpARegTag": 41,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -2581,20 +2570,9 @@
         "PC": 13
       },
       {
-        "DestRegister": 46,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 20,
-        "OpCode": "add",
-        "PC": 14
-      },
-      {
         "DestRegister": 47,
         "OpAIsReady": false,
-        "OpARegTag": 45,
+        "OpARegTag": 40,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -2608,7 +2586,7 @@
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 41,
+        "OpBRegTag": 45,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 16
@@ -2630,7 +2608,7 @@
         "OpARegTag": 48,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 45,
+        "OpBRegTag": 49,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 18
@@ -2649,7 +2627,7 @@
       {
         "DestRegister": 52,
         "OpAIsReady": false,
-        "OpARegTag": 45,
+        "OpARegTag": 46,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -2759,11 +2737,11 @@
       0
     ],
     "RegisterMapTable": [
-      55,
+      44,
       50,
       48,
       51,
-      46,
+      55,
       5,
       6,
       7,
@@ -2854,12 +2832,12 @@
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 4,
         "OldDestination": 35,
@@ -2883,7 +2861,7 @@
         "Done": false,
         "Exception": false,
         "LogicalDestination": 3,
-        "OldDestination": 41,
+        "OldDestination": 45,
         "PC": 17
       },
       {
@@ -2903,28 +2881,28 @@
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 45,
+        "LogicalDestination": 4,
+        "OldDestination": 46,
         "PC": 20
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 52,
         "PC": 21
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 53,
         "PC": 22
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 54,
         "PC": 23
       }
@@ -2976,7 +2954,7 @@
       true,
       true,
       true,
-      true,
+      false,
       true,
       true,
       true,
@@ -3083,7 +3061,7 @@
       {
         "DestRegister": 45,
         "OpAIsReady": false,
-        "OpARegTag": 44,
+        "OpARegTag": 41,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -3092,20 +3070,9 @@
         "PC": 13
       },
       {
-        "DestRegister": 46,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 20,
-        "OpCode": "add",
-        "PC": 14
-      },
-      {
         "DestRegister": 47,
         "OpAIsReady": false,
-        "OpARegTag": 45,
+        "OpARegTag": 40,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -3119,7 +3086,7 @@
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 41,
+        "OpBRegTag": 45,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 16
@@ -3141,7 +3108,7 @@
         "OpARegTag": 48,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 45,
+        "OpBRegTag": 49,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 18
@@ -3156,17 +3123,6 @@
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 19
-      },
-      {
-        "DestRegister": 52,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 20
       },
       {
         "DestRegister": 53,
@@ -3250,7 +3206,7 @@
       0,
       0,
       0,
-      0,
+      24,
       0,
       0,
       0,
@@ -3270,11 +3226,11 @@
       0
     ],
     "RegisterMapTable": [
-      55,
+      44,
       50,
       48,
       51,
-      46,
+      55,
       5,
       6,
       7,
@@ -3358,12 +3314,12 @@
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 4,
         "OldDestination": 35,
@@ -3387,7 +3343,7 @@
         "Done": false,
         "Exception": false,
         "LogicalDestination": 3,
-        "OldDestination": 41,
+        "OldDestination": 45,
         "PC": 17
       },
       {
@@ -3407,28 +3363,28 @@
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 45,
+        "LogicalDestination": 4,
+        "OldDestination": 46,
         "PC": 20
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 52,
         "PC": 21
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 53,
         "PC": 22
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 54,
         "PC": 23
       }
@@ -3480,7 +3436,7 @@
       true,
       true,
       true,
-      true,
+      false,
       true,
       true,
       true,
@@ -3588,7 +3544,7 @@
       {
         "DestRegister": 45,
         "OpAIsReady": false,
-        "OpARegTag": 44,
+        "OpARegTag": 41,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -3597,20 +3553,9 @@
         "PC": 13
       },
       {
-        "DestRegister": 46,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 20,
-        "OpCode": "add",
-        "PC": 14
-      },
-      {
         "DestRegister": 47,
         "OpAIsReady": false,
-        "OpARegTag": 45,
+        "OpARegTag": 40,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -3624,7 +3569,7 @@
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 41,
+        "OpBRegTag": 45,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 16
@@ -3646,7 +3591,7 @@
         "OpARegTag": 48,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 45,
+        "OpBRegTag": 49,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 18
@@ -3661,17 +3606,6 @@
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 19
-      },
-      {
-        "DestRegister": 52,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 20
       },
       {
         "DestRegister": 53,
@@ -3755,7 +3689,7 @@
       0,
       0,
       0,
-      0,
+      24,
       0,
       0,
       0,
@@ -3775,11 +3709,11 @@
       0
     ],
     "RegisterMapTable": [
-      55,
+      44,
       50,
       48,
       51,
-      46,
+      55,
       5,
       6,
       7,
@@ -3863,12 +3797,12 @@
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 4,
         "OldDestination": 35,
@@ -3892,7 +3826,7 @@
         "Done": false,
         "Exception": false,
         "LogicalDestination": 3,
-        "OldDestination": 41,
+        "OldDestination": 45,
         "PC": 17
       },
       {
@@ -3910,30 +3844,30 @@
         "PC": 19
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 45,
+        "LogicalDestination": 4,
+        "OldDestination": 46,
         "PC": 20
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 52,
         "PC": 21
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 53,
         "PC": 22
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 54,
         "PC": 23
       }
@@ -3985,13 +3919,13 @@
       true,
       true,
       true,
+      false,
       true,
       true,
       true,
       true,
       true,
-      true,
-      true,
+      false,
       true,
       true,
       true,
@@ -4082,7 +4016,7 @@
       {
         "DestRegister": 45,
         "OpAIsReady": false,
-        "OpARegTag": 44,
+        "OpARegTag": 41,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -4091,20 +4025,9 @@
         "PC": 13
       },
       {
-        "DestRegister": 46,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 20,
-        "OpCode": "add",
-        "PC": 14
-      },
-      {
         "DestRegister": 47,
         "OpAIsReady": false,
-        "OpARegTag": 45,
+        "OpARegTag": 40,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -4118,7 +4041,7 @@
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 41,
+        "OpBRegTag": 45,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 16
@@ -4140,7 +4063,7 @@
         "OpARegTag": 48,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 45,
+        "OpBRegTag": 49,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 18
@@ -4155,28 +4078,6 @@
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 19
-      },
-      {
-        "DestRegister": 52,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 20
-      },
-      {
-        "DestRegister": 53,
-        "OpAIsReady": false,
-        "OpARegTag": 52,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 21
       },
       {
         "DestRegister": 54,
@@ -4249,13 +4150,13 @@
       0,
       0,
       0,
+      24,
       0,
       0,
       0,
       0,
       0,
-      0,
-      0,
+      25,
       0,
       0,
       0,
@@ -4269,11 +4170,11 @@
       0
     ],
     "RegisterMapTable": [
-      55,
+      44,
       50,
       48,
       51,
-      46,
+      55,
       5,
       6,
       7,
@@ -4350,12 +4251,12 @@
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 4,
         "OldDestination": 35,
@@ -4379,7 +4280,7 @@
         "Done": false,
         "Exception": false,
         "LogicalDestination": 3,
-        "OldDestination": 41,
+        "OldDestination": 45,
         "PC": 17
       },
       {
@@ -4397,30 +4298,30 @@
         "PC": 19
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 45,
+        "LogicalDestination": 4,
+        "OldDestination": 46,
         "PC": 20
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 52,
         "PC": 21
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 53,
         "PC": 22
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 54,
         "PC": 23
       }
@@ -4472,13 +4373,13 @@
       true,
       true,
       true,
+      false,
       true,
       true,
       true,
       true,
       true,
-      true,
-      true,
+      false,
       true,
       true,
       true,
@@ -4570,7 +4471,7 @@
       {
         "DestRegister": 45,
         "OpAIsReady": false,
-        "OpARegTag": 44,
+        "OpARegTag": 41,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -4579,20 +4480,9 @@
         "PC": 13
       },
       {
-        "DestRegister": 46,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 20,
-        "OpCode": "add",
-        "PC": 14
-      },
-      {
         "DestRegister": 47,
         "OpAIsReady": false,
-        "OpARegTag": 45,
+        "OpARegTag": 40,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -4606,7 +4496,7 @@
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 41,
+        "OpBRegTag": 45,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 16
@@ -4628,7 +4518,7 @@
         "OpARegTag": 48,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 45,
+        "OpBRegTag": 49,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 18
@@ -4643,28 +4533,6 @@
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 19
-      },
-      {
-        "DestRegister": 52,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 20
-      },
-      {
-        "DestRegister": 53,
-        "OpAIsReady": false,
-        "OpARegTag": 52,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 21
       },
       {
         "DestRegister": 54,
@@ -4737,13 +4605,13 @@
       0,
       0,
       0,
+      24,
       0,
       0,
       0,
       0,
       0,
-      0,
-      0,
+      25,
       0,
       0,
       0,
@@ -4757,11 +4625,11 @@
       0
     ],
     "RegisterMapTable": [
-      55,
+      44,
       50,
       48,
       51,
-      46,
+      55,
       5,
       6,
       7,
@@ -4838,12 +4706,12 @@
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 4,
         "OldDestination": 35,
@@ -4867,7 +4735,7 @@
         "Done": false,
         "Exception": false,
         "LogicalDestination": 3,
-        "OldDestination": 41,
+        "OldDestination": 45,
         "PC": 17
       },
       {
@@ -4885,30 +4753,30 @@
         "PC": 19
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 45,
+        "LogicalDestination": 4,
+        "OldDestination": 46,
         "PC": 20
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 52,
         "PC": 21
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 53,
         "PC": 22
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 54,
         "PC": 23
       }
@@ -4960,14 +4828,14 @@
       true,
       true,
       true,
+      false,
       true,
       true,
       true,
       true,
       true,
-      true,
-      true,
-      true,
+      false,
+      false,
       true,
       true,
       false,
@@ -5047,7 +4915,7 @@
       {
         "DestRegister": 45,
         "OpAIsReady": false,
-        "OpARegTag": 44,
+        "OpARegTag": 41,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -5056,20 +4924,9 @@
         "PC": 13
       },
       {
-        "DestRegister": 46,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 20,
-        "OpCode": "add",
-        "PC": 14
-      },
-      {
         "DestRegister": 47,
         "OpAIsReady": false,
-        "OpARegTag": 45,
+        "OpARegTag": 40,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -5083,7 +4940,7 @@
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 41,
+        "OpBRegTag": 45,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 16
@@ -5105,7 +4962,7 @@
         "OpARegTag": 48,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 45,
+        "OpBRegTag": 49,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 18
@@ -5120,39 +4977,6 @@
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 19
-      },
-      {
-        "DestRegister": 52,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 20
-      },
-      {
-        "DestRegister": 53,
-        "OpAIsReady": false,
-        "OpARegTag": 52,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 21
-      },
-      {
-        "DestRegister": 54,
-        "OpAIsReady": false,
-        "OpARegTag": 53,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 22
       },
       {
         "DestRegister": 55,
@@ -5214,14 +5038,14 @@
       0,
       0,
       0,
+      24,
       0,
       0,
       0,
       0,
       0,
-      0,
-      0,
-      0,
+      25,
+      26,
       0,
       0,
       0,
@@ -5234,11 +5058,11 @@
       0
     ],
     "RegisterMapTable": [
-      55,
+      44,
       50,
       48,
       51,
-      46,
+      55,
       5,
       6,
       7,
@@ -5308,12 +5132,12 @@
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 4,
         "OldDestination": 35,
@@ -5337,7 +5161,7 @@
         "Done": false,
         "Exception": false,
         "LogicalDestination": 3,
-        "OldDestination": 41,
+        "OldDestination": 45,
         "PC": 17
       },
       {
@@ -5355,30 +5179,30 @@
         "PC": 19
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 45,
+        "LogicalDestination": 4,
+        "OldDestination": 46,
         "PC": 20
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 52,
         "PC": 21
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 53,
         "PC": 22
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 54,
         "PC": 23
       }
@@ -5430,14 +5254,14 @@
       true,
       true,
       true,
+      false,
       true,
       true,
       true,
       true,
       true,
-      true,
-      true,
-      true,
+      false,
+      false,
       true,
       true,
       false,
@@ -5518,7 +5342,7 @@
       {
         "DestRegister": 45,
         "OpAIsReady": false,
-        "OpARegTag": 44,
+        "OpARegTag": 41,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -5527,20 +5351,9 @@
         "PC": 13
       },
       {
-        "DestRegister": 46,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 20,
-        "OpCode": "add",
-        "PC": 14
-      },
-      {
         "DestRegister": 47,
         "OpAIsReady": false,
-        "OpARegTag": 45,
+        "OpARegTag": 40,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -5554,7 +5367,7 @@
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 41,
+        "OpBRegTag": 45,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 16
@@ -5576,7 +5389,7 @@
         "OpARegTag": 48,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 45,
+        "OpBRegTag": 49,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 18
@@ -5591,39 +5404,6 @@
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 19
-      },
-      {
-        "DestRegister": 52,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 20
-      },
-      {
-        "DestRegister": 53,
-        "OpAIsReady": false,
-        "OpARegTag": 52,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 21
-      },
-      {
-        "DestRegister": 54,
-        "OpAIsReady": false,
-        "OpARegTag": 53,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 22
       },
       {
         "DestRegister": 55,
@@ -5685,14 +5465,14 @@
       0,
       0,
       0,
+      24,
       0,
       0,
       0,
       0,
       0,
-      0,
-      0,
-      0,
+      25,
+      26,
       0,
       0,
       0,
@@ -5705,11 +5485,11 @@
       0
     ],
     "RegisterMapTable": [
-      55,
+      44,
       50,
       48,
       51,
-      46,
+      55,
       5,
       6,
       7,
@@ -5779,12 +5559,12 @@
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 4,
         "OldDestination": 35,
@@ -5808,7 +5588,7 @@
         "Done": false,
         "Exception": false,
         "LogicalDestination": 3,
-        "OldDestination": 41,
+        "OldDestination": 45,
         "PC": 17
       },
       {
@@ -5826,30 +5606,30 @@
         "PC": 19
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 45,
+        "LogicalDestination": 4,
+        "OldDestination": 46,
         "PC": 20
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 52,
         "PC": 21
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 53,
         "PC": 22
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 54,
         "PC": 23
       }
@@ -5901,15 +5681,15 @@
       true,
       true,
       true,
+      false,
       true,
       true,
       true,
       true,
       true,
-      true,
-      true,
-      true,
-      true,
+      false,
+      false,
+      false,
       true,
       false,
       false,
@@ -5978,7 +5758,7 @@
       {
         "DestRegister": 45,
         "OpAIsReady": false,
-        "OpARegTag": 44,
+        "OpARegTag": 41,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -5987,34 +5767,12 @@
         "PC": 13
       },
       {
-        "DestRegister": 46,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 20,
-        "OpCode": "add",
-        "PC": 14
-      },
-      {
-        "DestRegister": 47,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 30,
-        "OpCode": "add",
-        "PC": 15
-      },
-      {
         "DestRegister": 48,
         "OpAIsReady": false,
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 41,
+        "OpBRegTag": 45,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 16
@@ -6036,7 +5794,7 @@
         "OpARegTag": 48,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 45,
+        "OpBRegTag": 49,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 18
@@ -6051,50 +5809,6 @@
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 19
-      },
-      {
-        "DestRegister": 52,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 20
-      },
-      {
-        "DestRegister": 53,
-        "OpAIsReady": false,
-        "OpARegTag": 52,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 21
-      },
-      {
-        "DestRegister": 54,
-        "OpAIsReady": false,
-        "OpARegTag": 53,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 22
-      },
-      {
-        "DestRegister": 55,
-        "OpAIsReady": false,
-        "OpARegTag": 54,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 23
       }
     ],
     "PC": 24,
@@ -6145,15 +5859,15 @@
       0,
       0,
       0,
+      24,
       0,
       0,
       0,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
+      25,
+      26,
+      27,
       0,
       0,
       0,
@@ -6165,11 +5879,11 @@
       0
     ],
     "RegisterMapTable": [
-      55,
+      44,
       50,
       48,
       51,
-      46,
+      55,
       5,
       6,
       7,
@@ -6232,12 +5946,12 @@
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 4,
         "OldDestination": 35,
@@ -6261,7 +5975,7 @@
         "Done": false,
         "Exception": false,
         "LogicalDestination": 3,
-        "OldDestination": 41,
+        "OldDestination": 45,
         "PC": 17
       },
       {
@@ -6279,30 +5993,30 @@
         "PC": 19
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 45,
+        "LogicalDestination": 4,
+        "OldDestination": 46,
         "PC": 20
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 52,
         "PC": 21
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 53,
         "PC": 22
       },
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 54,
         "PC": 23
       }
@@ -6354,15 +6068,15 @@
       true,
       true,
       true,
+      false,
       true,
       true,
       true,
       true,
       true,
-      true,
-      true,
-      true,
-      true,
+      false,
+      false,
+      false,
       true,
       false,
       false,
@@ -6432,7 +6146,7 @@
       {
         "DestRegister": 45,
         "OpAIsReady": false,
-        "OpARegTag": 44,
+        "OpARegTag": 41,
         "OpAValue": 0,
         "OpBIsReady": true,
         "OpBRegTag": 0,
@@ -6441,34 +6155,12 @@
         "PC": 13
       },
       {
-        "DestRegister": 46,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 20,
-        "OpCode": "add",
-        "PC": 14
-      },
-      {
-        "DestRegister": 47,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 30,
-        "OpCode": "add",
-        "PC": 15
-      },
-      {
         "DestRegister": 48,
         "OpAIsReady": false,
         "OpARegTag": 47,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 41,
+        "OpBRegTag": 45,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 16
@@ -6490,7 +6182,7 @@
         "OpARegTag": 48,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 45,
+        "OpBRegTag": 49,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 18
@@ -6505,50 +6197,6 @@
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 19
-      },
-      {
-        "DestRegister": 52,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 20
-      },
-      {
-        "DestRegister": 53,
-        "OpAIsReady": false,
-        "OpARegTag": 52,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 21
-      },
-      {
-        "DestRegister": 54,
-        "OpAIsReady": false,
-        "OpARegTag": 53,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 22
-      },
-      {
-        "DestRegister": 55,
-        "OpAIsReady": false,
-        "OpARegTag": 54,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 23
       }
     ],
     "PC": 24,
@@ -6599,15 +6247,15 @@
       0,
       0,
       0,
+      24,
       0,
       0,
       0,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
+      25,
+      26,
+      27,
       0,
       0,
       0,
@@ -6619,11 +6267,11 @@
       0
     ],
     "RegisterMapTable": [
-      55,
+      44,
       50,
       48,
       51,
-      46,
+      55,
       5,
       6,
       7,
@@ -6686,19 +6334,19 @@
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 4,
         "OldDestination": 35,
         "PC": 14
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 2,
         "OldDestination": 40,
@@ -6715,7 +6363,7 @@
         "Done": false,
         "Exception": false,
         "LogicalDestination": 3,
-        "OldDestination": 41,
+        "OldDestination": 45,
         "PC": 17
       },
       {
@@ -6733,30 +6381,30 @@
         "PC": 19
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 45,
+        "LogicalDestination": 4,
+        "OldDestination": 46,
         "PC": 20
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 52,
         "PC": 21
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 53,
         "PC": 22
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 54,
         "PC": 23
       }
@@ -6808,16 +6456,16 @@
       true,
       true,
       true,
+      false,
+      false,
       true,
       true,
       true,
       true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
+      false,
+      false,
+      false,
+      false,
       false,
       false,
       false,
@@ -6873,46 +6521,13 @@
         "PC": 12
       },
       {
-        "DestRegister": 45,
-        "OpAIsReady": false,
-        "OpARegTag": 44,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 10,
-        "OpCode": "add",
-        "PC": 13
-      },
-      {
-        "DestRegister": 46,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 20,
-        "OpCode": "add",
-        "PC": 14
-      },
-      {
-        "DestRegister": 47,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 30,
-        "OpCode": "add",
-        "PC": 15
-      },
-      {
         "DestRegister": 48,
-        "OpAIsReady": false,
-        "OpARegTag": 47,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1113,
+        "OpAIsReady": true,
+        "OpARegTag": 0,
+        "OpAValue": 1142,
+        "OpBIsReady": false,
+        "OpBRegTag": 45,
+        "OpBValue": 0,
         "OpCode": "sub",
         "PC": 16
       },
@@ -6933,7 +6548,7 @@
         "OpARegTag": 48,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 45,
+        "OpBRegTag": 49,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 18
@@ -6948,50 +6563,6 @@
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 19
-      },
-      {
-        "DestRegister": 52,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 20
-      },
-      {
-        "DestRegister": 53,
-        "OpAIsReady": false,
-        "OpARegTag": 52,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 21
-      },
-      {
-        "DestRegister": 54,
-        "OpAIsReady": false,
-        "OpARegTag": 53,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 22
-      },
-      {
-        "DestRegister": 55,
-        "OpAIsReady": false,
-        "OpARegTag": 54,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 23
       }
     ],
     "PC": 24,
@@ -7042,16 +6613,16 @@
       0,
       0,
       0,
+      24,
+      1142,
       0,
       0,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      25,
+      26,
+      27,
+      28,
       0,
       0,
       0,
@@ -7062,11 +6633,11 @@
       0
     ],
     "RegisterMapTable": [
-      55,
+      44,
       50,
       48,
       51,
-      46,
+      55,
       5,
       6,
       7,
@@ -7122,19 +6693,19 @@
       {
         "Done": false,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 4,
         "OldDestination": 35,
         "PC": 14
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 2,
         "OldDestination": 40,
@@ -7151,7 +6722,7 @@
         "Done": false,
         "Exception": false,
         "LogicalDestination": 3,
-        "OldDestination": 41,
+        "OldDestination": 45,
         "PC": 17
       },
       {
@@ -7169,30 +6740,30 @@
         "PC": 19
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 45,
+        "LogicalDestination": 4,
+        "OldDestination": 46,
         "PC": 20
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 52,
         "PC": 21
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 53,
         "PC": 22
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 54,
         "PC": 23
       }
@@ -7244,16 +6815,16 @@
       true,
       true,
       true,
+      false,
+      false,
       true,
       true,
       true,
       true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
+      false,
+      false,
+      false,
+      false,
       false,
       false,
       false,
@@ -7310,46 +6881,13 @@
         "PC": 12
       },
       {
-        "DestRegister": 45,
-        "OpAIsReady": false,
-        "OpARegTag": 44,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 10,
-        "OpCode": "add",
-        "PC": 13
-      },
-      {
-        "DestRegister": 46,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 20,
-        "OpCode": "add",
-        "PC": 14
-      },
-      {
-        "DestRegister": 47,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 30,
-        "OpCode": "add",
-        "PC": 15
-      },
-      {
         "DestRegister": 48,
-        "OpAIsReady": false,
-        "OpARegTag": 47,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1113,
+        "OpAIsReady": true,
+        "OpARegTag": 0,
+        "OpAValue": 1142,
+        "OpBIsReady": false,
+        "OpBRegTag": 45,
+        "OpBValue": 0,
         "OpCode": "sub",
         "PC": 16
       },
@@ -7370,7 +6908,7 @@
         "OpARegTag": 48,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 45,
+        "OpBRegTag": 49,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 18
@@ -7385,50 +6923,6 @@
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 19
-      },
-      {
-        "DestRegister": 52,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 20
-      },
-      {
-        "DestRegister": 53,
-        "OpAIsReady": false,
-        "OpARegTag": 52,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 21
-      },
-      {
-        "DestRegister": 54,
-        "OpAIsReady": false,
-        "OpARegTag": 53,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 22
-      },
-      {
-        "DestRegister": 55,
-        "OpAIsReady": false,
-        "OpARegTag": 54,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 23
       }
     ],
     "PC": 24,
@@ -7479,16 +6973,16 @@
       0,
       0,
       0,
+      24,
+      1142,
       0,
       0,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      25,
+      26,
+      27,
+      28,
       0,
       0,
       0,
@@ -7499,11 +6993,11 @@
       0
     ],
     "RegisterMapTable": [
-      55,
+      44,
       50,
       48,
       51,
-      46,
+      55,
       5,
       6,
       7,
@@ -7557,21 +7051,21 @@
         "PC": 12
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 4,
         "OldDestination": 35,
         "PC": 14
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 2,
         "OldDestination": 40,
@@ -7588,7 +7082,7 @@
         "Done": false,
         "Exception": false,
         "LogicalDestination": 3,
-        "OldDestination": 41,
+        "OldDestination": 45,
         "PC": 17
       },
       {
@@ -7606,30 +7100,30 @@
         "PC": 19
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 45,
+        "LogicalDestination": 4,
+        "OldDestination": 46,
         "PC": 20
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 52,
         "PC": 21
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 53,
         "PC": 22
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 54,
         "PC": 23
       }
@@ -7680,17 +7174,17 @@
       false,
       true,
       true,
+      false,
+      false,
+      false,
       true,
       true,
       true,
       true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
+      false,
+      false,
+      false,
+      false,
       false,
       false,
       false,
@@ -7736,54 +7230,10 @@
         "PC": 12
       },
       {
-        "DestRegister": 45,
-        "OpAIsReady": false,
-        "OpARegTag": 44,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 10,
-        "OpCode": "add",
-        "PC": 13
-      },
-      {
-        "DestRegister": 46,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 20,
-        "OpCode": "add",
-        "PC": 14
-      },
-      {
-        "DestRegister": 47,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 30,
-        "OpCode": "add",
-        "PC": 15
-      },
-      {
-        "DestRegister": 48,
-        "OpAIsReady": false,
-        "OpARegTag": 47,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1113,
-        "OpCode": "sub",
-        "PC": 16
-      },
-      {
         "DestRegister": 49,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
+        "OpAIsReady": true,
+        "OpARegTag": 0,
+        "OpAValue": 1123,
         "OpBIsReady": false,
         "OpBRegTag": 48,
         "OpBValue": 0,
@@ -7796,7 +7246,7 @@
         "OpARegTag": 48,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 45,
+        "OpBRegTag": 49,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 18
@@ -7811,50 +7261,6 @@
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 19
-      },
-      {
-        "DestRegister": 52,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 20
-      },
-      {
-        "DestRegister": 53,
-        "OpAIsReady": false,
-        "OpARegTag": 52,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 21
-      },
-      {
-        "DestRegister": 54,
-        "OpAIsReady": false,
-        "OpARegTag": 53,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 22
-      },
-      {
-        "DestRegister": 55,
-        "OpAIsReady": false,
-        "OpARegTag": 54,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 23
       }
     ],
     "PC": 24,
@@ -7904,17 +7310,17 @@
       2226,
       0,
       0,
+      1123,
+      24,
+      1142,
       0,
       0,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      25,
+      26,
+      27,
+      28,
       0,
       0,
       0,
@@ -7925,11 +7331,11 @@
       0
     ],
     "RegisterMapTable": [
-      55,
+      44,
       50,
       48,
       51,
-      46,
+      55,
       5,
       6,
       7,
@@ -7976,21 +7382,21 @@
         "PC": 12
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 4,
         "OldDestination": 35,
         "PC": 14
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 2,
         "OldDestination": 40,
@@ -8007,7 +7413,7 @@
         "Done": false,
         "Exception": false,
         "LogicalDestination": 3,
-        "OldDestination": 41,
+        "OldDestination": 45,
         "PC": 17
       },
       {
@@ -8025,30 +7431,30 @@
         "PC": 19
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 45,
+        "LogicalDestination": 4,
+        "OldDestination": 46,
         "PC": 20
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 52,
         "PC": 21
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 53,
         "PC": 22
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 54,
         "PC": 23
       }
@@ -8099,17 +7505,17 @@
       false,
       true,
       true,
+      false,
+      false,
+      false,
       true,
       true,
       true,
       true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
+      false,
+      false,
+      false,
+      false,
       false,
       false,
       false,
@@ -8156,54 +7562,10 @@
         "PC": 12
       },
       {
-        "DestRegister": 45,
-        "OpAIsReady": false,
-        "OpARegTag": 44,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 10,
-        "OpCode": "add",
-        "PC": 13
-      },
-      {
-        "DestRegister": 46,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 20,
-        "OpCode": "add",
-        "PC": 14
-      },
-      {
-        "DestRegister": 47,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 30,
-        "OpCode": "add",
-        "PC": 15
-      },
-      {
-        "DestRegister": 48,
-        "OpAIsReady": false,
-        "OpARegTag": 47,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1113,
-        "OpCode": "sub",
-        "PC": 16
-      },
-      {
         "DestRegister": 49,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
+        "OpAIsReady": true,
+        "OpARegTag": 0,
+        "OpAValue": 1123,
         "OpBIsReady": false,
         "OpBRegTag": 48,
         "OpBValue": 0,
@@ -8216,7 +7578,7 @@
         "OpARegTag": 48,
         "OpAValue": 0,
         "OpBIsReady": false,
-        "OpBRegTag": 45,
+        "OpBRegTag": 49,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 18
@@ -8231,50 +7593,6 @@
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 19
-      },
-      {
-        "DestRegister": 52,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 20
-      },
-      {
-        "DestRegister": 53,
-        "OpAIsReady": false,
-        "OpARegTag": 52,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 21
-      },
-      {
-        "DestRegister": 54,
-        "OpAIsReady": false,
-        "OpARegTag": 53,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 22
-      },
-      {
-        "DestRegister": 55,
-        "OpAIsReady": false,
-        "OpARegTag": 54,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 23
       }
     ],
     "PC": 24,
@@ -8324,17 +7642,17 @@
       2226,
       0,
       0,
+      1123,
+      24,
+      1142,
       0,
       0,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      25,
+      26,
+      27,
+      28,
       0,
       0,
       0,
@@ -8345,11 +7663,11 @@
       0
     ],
     "RegisterMapTable": [
-      55,
+      44,
       50,
       48,
       51,
-      46,
+      55,
       5,
       6,
       7,
@@ -8396,28 +7714,28 @@
         "PC": 12
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 4,
         "OldDestination": 35,
         "PC": 14
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 2,
         "OldDestination": 40,
         "PC": 15
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 2,
         "OldDestination": 47,
@@ -8427,7 +7745,7 @@
         "Done": false,
         "Exception": false,
         "LogicalDestination": 3,
-        "OldDestination": 41,
+        "OldDestination": 45,
         "PC": 17
       },
       {
@@ -8445,30 +7763,30 @@
         "PC": 19
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 45,
+        "LogicalDestination": 4,
+        "OldDestination": 46,
         "PC": 20
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 52,
         "PC": 21
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 53,
         "PC": 22
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 54,
         "PC": 23
       }
@@ -8519,17 +7837,17 @@
       false,
       false,
       true,
+      false,
+      false,
+      false,
+      false,
       true,
       true,
       true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
+      false,
+      false,
+      false,
+      false,
       false,
       false,
       false,
@@ -8565,67 +7883,12 @@
     ],
     "IntegerQueue": [
       {
-        "DestRegister": 45,
-        "OpAIsReady": false,
-        "OpARegTag": 44,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 10,
-        "OpCode": "add",
-        "PC": 13
-      },
-      {
-        "DestRegister": 46,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 20,
-        "OpCode": "add",
-        "PC": 14
-      },
-      {
-        "DestRegister": 47,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 30,
-        "OpCode": "add",
-        "PC": 15
-      },
-      {
-        "DestRegister": 48,
-        "OpAIsReady": false,
-        "OpARegTag": 47,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1113,
-        "OpCode": "sub",
-        "PC": 16
-      },
-      {
-        "DestRegister": 49,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": false,
-        "OpBRegTag": 48,
-        "OpBValue": 0,
-        "OpCode": "sub",
-        "PC": 17
-      },
-      {
         "DestRegister": 50,
-        "OpAIsReady": false,
-        "OpARegTag": 48,
-        "OpAValue": 0,
+        "OpAIsReady": true,
+        "OpARegTag": 0,
+        "OpAValue": 19,
         "OpBIsReady": false,
-        "OpBRegTag": 45,
+        "OpBRegTag": 49,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 18
@@ -8640,50 +7903,6 @@
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 19
-      },
-      {
-        "DestRegister": 52,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 20
-      },
-      {
-        "DestRegister": 53,
-        "OpAIsReady": false,
-        "OpARegTag": 52,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 21
-      },
-      {
-        "DestRegister": 54,
-        "OpAIsReady": false,
-        "OpARegTag": 53,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 22
-      },
-      {
-        "DestRegister": 55,
-        "OpAIsReady": false,
-        "OpARegTag": 54,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 23
       }
     ],
     "PC": 24,
@@ -8733,17 +7952,17 @@
       2226,
       0,
       0,
+      1123,
+      24,
+      1142,
+      19,
       0,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      25,
+      26,
+      27,
+      28,
       0,
       0,
       0,
@@ -8754,11 +7973,11 @@
       0
     ],
     "RegisterMapTable": [
-      55,
+      44,
       50,
       48,
       51,
-      46,
+      55,
       5,
       6,
       7,
@@ -8798,28 +8017,28 @@
         "PC": 12
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 4,
         "OldDestination": 35,
         "PC": 14
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 2,
         "OldDestination": 40,
         "PC": 15
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 2,
         "OldDestination": 47,
@@ -8829,7 +8048,7 @@
         "Done": false,
         "Exception": false,
         "LogicalDestination": 3,
-        "OldDestination": 41,
+        "OldDestination": 45,
         "PC": 17
       },
       {
@@ -8847,30 +8066,30 @@
         "PC": 19
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 45,
+        "LogicalDestination": 4,
+        "OldDestination": 46,
         "PC": 20
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 52,
         "PC": 21
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 53,
         "PC": 22
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 54,
         "PC": 23
       }
@@ -8921,17 +8140,17 @@
       false,
       false,
       true,
+      false,
+      false,
+      false,
+      false,
       true,
       true,
       true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
+      false,
+      false,
+      false,
+      false,
       false,
       false,
       false,
@@ -8968,67 +8187,12 @@
     ],
     "IntegerQueue": [
       {
-        "DestRegister": 45,
-        "OpAIsReady": false,
-        "OpARegTag": 44,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 10,
-        "OpCode": "add",
-        "PC": 13
-      },
-      {
-        "DestRegister": 46,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 20,
-        "OpCode": "add",
-        "PC": 14
-      },
-      {
-        "DestRegister": 47,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 30,
-        "OpCode": "add",
-        "PC": 15
-      },
-      {
-        "DestRegister": 48,
-        "OpAIsReady": false,
-        "OpARegTag": 47,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1113,
-        "OpCode": "sub",
-        "PC": 16
-      },
-      {
-        "DestRegister": 49,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": false,
-        "OpBRegTag": 48,
-        "OpBValue": 0,
-        "OpCode": "sub",
-        "PC": 17
-      },
-      {
         "DestRegister": 50,
-        "OpAIsReady": false,
-        "OpARegTag": 48,
-        "OpAValue": 0,
+        "OpAIsReady": true,
+        "OpARegTag": 0,
+        "OpAValue": 19,
         "OpBIsReady": false,
-        "OpBRegTag": 45,
+        "OpBRegTag": 49,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 18
@@ -9043,50 +8207,6 @@
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 19
-      },
-      {
-        "DestRegister": 52,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 20
-      },
-      {
-        "DestRegister": 53,
-        "OpAIsReady": false,
-        "OpARegTag": 52,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 21
-      },
-      {
-        "DestRegister": 54,
-        "OpAIsReady": false,
-        "OpARegTag": 53,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 22
-      },
-      {
-        "DestRegister": 55,
-        "OpAIsReady": false,
-        "OpARegTag": 54,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 23
       }
     ],
     "PC": 24,
@@ -9136,17 +8256,17 @@
       2226,
       0,
       0,
+      1123,
+      24,
+      1142,
+      19,
       0,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      25,
+      26,
+      27,
+      28,
       0,
       0,
       0,
@@ -9157,11 +8277,11 @@
       0
     ],
     "RegisterMapTable": [
-      55,
+      44,
       50,
       48,
       51,
-      46,
+      55,
       5,
       6,
       7,
@@ -9201,38 +8321,38 @@
         "PC": 12
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 4,
         "OldDestination": 35,
         "PC": 14
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 2,
         "OldDestination": 40,
         "PC": 15
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 2,
         "OldDestination": 47,
         "PC": 16
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 3,
-        "OldDestination": 41,
+        "OldDestination": 45,
         "PC": 17
       },
       {
@@ -9250,30 +8370,30 @@
         "PC": 19
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 45,
+        "LogicalDestination": 4,
+        "OldDestination": 46,
         "PC": 20
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 52,
         "PC": 21
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 53,
         "PC": 22
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 54,
         "PC": 23
       }
@@ -9323,18 +8443,18 @@
       false,
       false,
       false,
+      true,
+      false,
+      false,
+      false,
+      false,
       false,
       true,
       true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
+      false,
+      false,
+      false,
+      false,
       false,
       false,
       false,
@@ -9371,125 +8491,15 @@
     ],
     "IntegerQueue": [
       {
-        "DestRegister": 45,
-        "OpAIsReady": false,
-        "OpARegTag": 44,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 10,
-        "OpCode": "add",
-        "PC": 13
-      },
-      {
-        "DestRegister": 46,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 20,
-        "OpCode": "add",
-        "PC": 14
-      },
-      {
-        "DestRegister": 47,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 30,
-        "OpCode": "add",
-        "PC": 15
-      },
-      {
-        "DestRegister": 48,
-        "OpAIsReady": false,
-        "OpARegTag": 47,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1113,
-        "OpCode": "sub",
-        "PC": 16
-      },
-      {
-        "DestRegister": 49,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": false,
-        "OpBRegTag": 48,
-        "OpBValue": 0,
-        "OpCode": "sub",
-        "PC": 17
-      },
-      {
-        "DestRegister": 50,
-        "OpAIsReady": false,
-        "OpARegTag": 48,
-        "OpAValue": 0,
-        "OpBIsReady": false,
-        "OpBRegTag": 45,
-        "OpBValue": 0,
-        "OpCode": "sub",
-        "PC": 18
-      },
-      {
         "DestRegister": 51,
-        "OpAIsReady": false,
-        "OpARegTag": 49,
-        "OpAValue": 0,
+        "OpAIsReady": true,
+        "OpARegTag": 0,
+        "OpAValue": 1104,
         "OpBIsReady": false,
         "OpBRegTag": 50,
         "OpBValue": 0,
         "OpCode": "sub",
         "PC": 19
-      },
-      {
-        "DestRegister": 52,
-        "OpAIsReady": false,
-        "OpARegTag": 45,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 20
-      },
-      {
-        "DestRegister": 53,
-        "OpAIsReady": false,
-        "OpARegTag": 52,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 21
-      },
-      {
-        "DestRegister": 54,
-        "OpAIsReady": false,
-        "OpARegTag": 53,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 22
-      },
-      {
-        "DestRegister": 55,
-        "OpAIsReady": false,
-        "OpARegTag": 54,
-        "OpAValue": 0,
-        "OpBIsReady": true,
-        "OpBRegTag": 0,
-        "OpBValue": 1,
-        "OpCode": "add",
-        "PC": 23
       }
     ],
     "PC": 24,
@@ -9539,17 +8549,17 @@
       2226,
       0,
       0,
+      1123,
+      24,
+      1142,
+      19,
+      1104,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      25,
+      26,
+      27,
+      28,
       0,
       0,
       0,
@@ -9560,11 +8570,11 @@
       0
     ],
     "RegisterMapTable": [
-      55,
+      44,
       50,
       48,
       51,
-      46,
+      55,
       5,
       6,
       7,
@@ -9604,38 +8614,38 @@
         "PC": 12
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 4,
         "OldDestination": 35,
         "PC": 14
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 2,
         "OldDestination": 40,
         "PC": 15
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 2,
         "OldDestination": 47,
         "PC": 16
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 3,
-        "OldDestination": 41,
+        "OldDestination": 45,
         "PC": 17
       },
       {
@@ -9653,30 +8663,30 @@
         "PC": 19
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 45,
+        "LogicalDestination": 4,
+        "OldDestination": 46,
         "PC": 20
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 52,
         "PC": 21
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 53,
         "PC": 22
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
+        "LogicalDestination": 4,
         "OldDestination": 54,
         "PC": 23
       }
@@ -9726,18 +8736,18 @@
       false,
       false,
       false,
+      true,
+      false,
+      false,
+      false,
+      false,
       false,
       true,
       true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
+      false,
+      false,
+      false,
+      false,
       false,
       false,
       false,
@@ -9820,17 +8830,17 @@
       2226,
       0,
       0,
+      1123,
+      24,
+      1142,
+      19,
+      1104,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      25,
+      26,
+      27,
+      28,
       0,
       0,
       0,
@@ -9841,11 +8851,11 @@
       0
     ],
     "RegisterMapTable": [
-      55,
+      44,
       50,
       48,
       51,
-      46,
+      55,
       5,
       6,
       7,
@@ -9885,38 +8895,38 @@
         "PC": 12
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 4,
         "OldDestination": 35,
         "PC": 14
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 2,
         "OldDestination": 40,
         "PC": 15
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 2,
         "OldDestination": 47,
         "PC": 16
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 3,
-        "OldDestination": 41,
+        "OldDestination": 45,
         "PC": 17
       },
       {
@@ -9979,18 +8989,18 @@
       false,
       false,
       false,
+      true,
+      false,
+      false,
+      false,
+      false,
       false,
       true,
       true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
+      false,
+      false,
+      false,
+      false,
       false,
       false,
       false,
@@ -10077,17 +9087,17 @@
       2226,
       0,
       0,
+      1123,
+      24,
+      1142,
+      19,
+      1104,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      25,
+      26,
+      27,
+      28,
       0,
       0,
       0,
@@ -10098,7 +9108,7 @@
       0
     ],
     "RegisterMapTable": [
-      45,
+      44,
       50,
       48,
       51,
@@ -10142,21 +9152,21 @@
         "PC": 12
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
-        "LogicalDestination": 0,
-        "OldDestination": 44,
+        "LogicalDestination": 3,
+        "OldDestination": 41,
         "PC": 13
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 4,
         "OldDestination": 35,
         "PC": 14
       },
       {
-        "Done": false,
+        "Done": true,
         "Exception": false,
         "LogicalDestination": 2,
         "OldDestination": 40,
@@ -10208,18 +9218,18 @@
       false,
       false,
       false,
+      true,
       false,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
       false,
       false,
       false,
@@ -10310,17 +9320,17 @@
       2226,
       0,
       0,
+      1123,
+      24,
+      1142,
+      19,
+      1104,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      25,
+      26,
+      27,
+      28,
       0,
       0,
       0,
@@ -10331,10 +9341,10 @@
       0
     ],
     "RegisterMapTable": [
-      45,
+      44,
       32,
       47,
-      41,
+      45,
       46,
       5,
       6,
@@ -10413,17 +9423,17 @@
       false,
       false,
       false,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
       false,
       false,
       false,
@@ -10518,17 +9528,17 @@
       2226,
       0,
       0,
+      1123,
+      24,
+      1142,
+      19,
+      1104,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      25,
+      26,
+      27,
+      28,
       0,
       0,
       0,
@@ -10621,17 +9631,17 @@
       false,
       false,
       false,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
       false,
       false,
       false,
@@ -10726,17 +9736,17 @@
       2226,
       0,
       0,
+      1123,
+      24,
+      1142,
+      19,
+      1104,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      25,
+      26,
+      27,
+      28,
       0,
       0,
       0,

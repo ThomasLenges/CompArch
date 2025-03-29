@@ -89,11 +89,21 @@ def main():
         # add new cycle to output
         trace.append(copy.deepcopy(state))
 
-        for _ in range(4):
-            entry = state["ActiveList"].pop()
+        last_entries = list(reversed(state["ActiveList"][-4:]))
+    
 
-            old_dest = entry["OldDestination"]
-            state["FreeList"].append(old_dest)
+        for i in range(4):
+            current_entry = last_entries[i]
+            log_reg = current_entry["LogicalDestination"]
+            phys_dest = current_entry["OldDestination"]
+
+            old_mapping = state["RegisterMapTable"][log_reg]
+            if old_mapping is not None:
+                    state["FreeList"].append(old_mapping)
+                    state["BusyBitTable"][old_mapping] = False
+            state["RegisterMapTable"][log_reg] = phys_dest
+
+        del state["ActiveList"][-4:]
         
 
     # === End of exception handling

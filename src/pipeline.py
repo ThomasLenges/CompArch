@@ -183,7 +183,8 @@ def execute(state, issued_instructions):
 
                 break
         
-        state["BusyBitTable"][dest] = False
+        if not exception:
+            state["BusyBitTable"][dest] = False
         state["PhysicalRegisterFile"][dest] = result
 
         # Forwarding path

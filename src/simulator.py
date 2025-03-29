@@ -44,9 +44,10 @@ def main():
         exception_handler(state, trace)
         
     # End of simulation
-    state["Exception"] = False
-    trace.append(copy.deepcopy(state))
-
+    if(state["Exception"]):
+        state["Exception"] = False
+        trace.append(copy.deepcopy(state))
+    print("end of simulation")
 
     # Write output
     with open(output, "w") as f:

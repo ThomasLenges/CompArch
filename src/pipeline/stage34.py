@@ -25,7 +25,7 @@ def execute(state, issued_instructions):
             result = a + b
         elif op == "sub":
             result = a - b
-        elif op == "mul":
+        elif op == "mulu":
             result = a * b
         elif op == "divu":
             if b == 0:

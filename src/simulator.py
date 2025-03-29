@@ -2,11 +2,8 @@ import sys
 import json
 import copy
 
-from pipeline import fetch_and_decode
-from pipeline import rename_and_dispatch
-from pipeline import issue
-from pipeline import execute
-from pipeline import commit
+from pipeline.pipeline import pipeline
+from exception_handling.exception_handler import exception_handler
 
 def main():
     if len(sys.argv) != 3:
@@ -39,80 +36,15 @@ def main():
     # Initial state 
     trace.append(copy.deepcopy(state))
 
-    DIR = [] # Decoded Instruction Register
-    ExecuteBuffer = [[],[]] # From issue → execute
+    # Go through pipeline
+    pipeline(state, instructions, trace)
 
-    counter = 0
-
-    # Parse input.json
-    while (
-        state["PC"] < len(instructions)
-        or state["ActiveList"] 
-    ):
-        # === Stage 5: Commit
-        exception = commit(state)
-        if exception:
-            break
-
-        # === Stage 3 & 4: Execute
-        execute(state, ExecuteBuffer[1])
-        ExecuteBuffer.pop()  # shift pipeline
-        ExecuteBuffer.insert(0, []) # make room for next exec0
-
-
-        # === Stage 2: Issue
-        issued = issue(state)
-        ExecuteBuffer[0].extend(issued)
-
-
-
-        # === Stage 1: Rename & Dispacth
-        rename_and_dispatch(state, DIR)
-        DIR = [] # consumed
-
-        # === Stage 0: Fetch & Decode 
-        decoded = fetch_and_decode(state, instructions)
-        DIR.extend(decoded)
-
-        # add new cycle to ouput
-        trace.append(copy.deepcopy(state))
-
-        print(f"Cycle: {counter}")
-        counter += 1
-    
-    # === Exception handling 
-    while (state["ActiveList"]):
-        print("Handling exception")
-
-        state["IntegerQueue"].clear()
-
-        # add new cycle to output
-        trace.append(copy.deepcopy(state))
-
-        last_entries = list(reversed(state["ActiveList"][-4:]))
-    
-
-        for i in range(4):
-            current_entry = last_entries[i]
-            log_reg = current_entry["LogicalDestination"]
-            phys_dest = current_entry["OldDestination"]
-
-            old_mapping = state["RegisterMapTable"][log_reg]
-            if old_mapping is not None:
-                    state["FreeList"].append(old_mapping)
-                    state["BusyBitTable"][old_mapping] = False
-            state["RegisterMapTable"][log_reg] = phys_dest
-
-        del state["ActiveList"][-4:]
+    # Exception handling 
+    if(state["Exception"]):
+        exception_handler(state, trace)
         
-
-    # === End of exception handling
-    print("End of sim")
-
-    trace.append(copy.deepcopy(state))
-
+    # End of simulation
     state["Exception"] = False
-
     trace.append(copy.deepcopy(state))
 
 

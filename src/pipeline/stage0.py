@@ -1,3 +1,35 @@
+def fetch_and_decode(state, instructions):
+    """
+    Simulates stage 0 of the pipeline
+    Fethes and decodes up to 4 instructions 
+    Updates:
+    - PC
+    - DecodedPCs
+    """
+    decoded_instructions = []
+    decoded_pcs = []
+
+    for i in range(4):  # Fetch up to 4 instructions
+        instr_index = state["PC"] + i
+
+        if instr_index >= len(instructions):
+            break  # no more instructions to fetch
+
+        inst_str = instructions[instr_index]
+        inst = parse_instruction(inst_str)
+
+        # Keep the PC for the active list
+        inst["PC"] = instr_index
+
+        decoded_instructions.append(inst)
+        decoded_pcs.append(instr_index)
+
+    # Update state
+    state["DecodedPCs"] = decoded_pcs
+    state["PC"] += len(decoded_instructions)  # advance PC by # of fetched instructions
+
+    return decoded_instructions
+
 def parse_instruction(inst_str):
     """
     Parses assembly instructions and returns dictionnary

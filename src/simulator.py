@@ -47,25 +47,23 @@ def main():
     # Parse input.json
     while (
         state["PC"] < len(instructions)
-        or any(ExecuteBuffer) 
+        or state["ActiveList"] 
     ):
         # === Stage 5: Commit
-        commit(state)
+        exception = commit(state)
+        if exception:
+            break
 
         # === Stage 3 & 4: Execute
         execute(state, ExecuteBuffer[1])
         ExecuteBuffer.pop()  # shift pipeline
         ExecuteBuffer.insert(0, []) # make room for next exec0
 
-        for inst in ExecuteBuffer[1]:
-            print(f"[Cycle {counter}] ⚙️  Executed: PC={inst['PC']}, Dest=P{inst['DestRegister']}, Op={inst['OpCode']}")
 
         # === Stage 2: Issue
         issued = issue(state)
         ExecuteBuffer[0].extend(issued)
 
-        for inst in issued:
-            print(f"[Cycle {counter}] 🔁 Issued: PC={inst['PC']}, Dest=P{inst['DestRegister']}, Op={inst['OpCode']}")
 
 
         # === Stage 1: Rename & Dispacth
@@ -76,11 +74,36 @@ def main():
         decoded = fetch_and_decode(state, instructions)
         DIR.extend(decoded)
 
-        # trace changes its "PC" and "DecodedPCs"
+        # add new cycle to ouput
         trace.append(copy.deepcopy(state))
 
         print(f"Cycle: {counter}")
         counter += 1
+    
+    # === Exception handling 
+    while (state["ActiveList"]):
+        print("Handling exception")
+
+        state["IntegerQueue"].clear()
+
+        # add new cycle to output
+        trace.append(copy.deepcopy(state))
+
+        for _ in range(4):
+            entry = state["ActiveList"].pop()
+
+            old_dest = entry["OldDestination"]
+            state["FreeList"].append(old_dest)
+        
+
+    # === End of exception handling
+    print("End of sim")
+
+    trace.append(copy.deepcopy(state))
+
+    state["Exception"] = False
+
+    trace.append(copy.deepcopy(state))
 
 
     # Write output

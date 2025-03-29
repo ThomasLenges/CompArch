@@ -180,6 +180,7 @@ def execute(state, issued_instructions):
                 entry["Done"] = True
                 if exception:
                     entry["Exception"] = True
+
                 break
         
         state["BusyBitTable"][dest] = False
@@ -187,11 +188,11 @@ def execute(state, issued_instructions):
 
         # Forwarding path
         for iq_entry in state["IntegerQueue"]:
-            if (not iq_entry["OpAIsReady"]) and iq_entry["OpARegTag"] == dest:
+            if (not iq_entry["OpAIsReady"]) and iq_entry["OpARegTag"] == dest and not exception:
                 iq_entry["OpAIsReady"] = True
                 iq_entry["OpAValue"] = result
                 iq_entry["OpARegTag"] = 0
-            if (not iq_entry["OpBIsReady"]) and iq_entry["OpBRegTag"] == dest:
+            if (not iq_entry["OpBIsReady"]) and iq_entry["OpBRegTag"] == dest and not exception:
                 iq_entry["OpBIsReady"] = True
                 iq_entry["OpBValue"] = result
                 iq_entry["OpBRegTag"] = 0
@@ -217,7 +218,7 @@ def commit(state):
             state["ExceptionPC"] = entry["PC"]
             state["PC"] = 65536
             state["Exception"] = True
-            break
+            return True
 
         # Handle commit
         if entry["Done"]:
@@ -226,4 +227,5 @@ def commit(state):
             state["FreeList"].append(old_dest)
         else:
             break
+    return False
 

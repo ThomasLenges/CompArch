@@ -16,7 +16,7 @@ def commit(state):
 
         # Handle exception
         if entry["Exception"]:
-            print(f"[Commit] 🚨 Exception at PC={entry['PC']} → Jumping to 0x10000")
+            print(f"[Commit] Exception at PC={entry['PC']} → Jumping to 0x10000")
             state["ExceptionPC"] = entry["PC"]
             state["PC"] = 65536
             state["Exception"] = True

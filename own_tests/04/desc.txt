@@ -1,0 +1,2 @@
+Invalid immediate (Immediate value out of range)
+Should raise ValueError

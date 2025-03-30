@@ -1,0 +1,2 @@
+Invalid operand (register out of bound)
+Should raise ValueError

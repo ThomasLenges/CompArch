@@ -1,5 +1,3 @@
-import numpy as np
-
 def execute(state, issued_instructions):
     """
     Simulates stage 3 & 4 of the pipeline

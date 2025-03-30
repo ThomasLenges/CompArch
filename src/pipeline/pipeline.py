@@ -15,6 +15,7 @@ def pipeline(state, instructions, trace):
 
     while (
         state["PC"] < len(instructions)
+        or state["DecodedPCs"]
         or state["ActiveList"] 
     ):
     # === Stage 5: Commit

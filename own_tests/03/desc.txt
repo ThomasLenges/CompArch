@@ -1,2 +1,2 @@
-Invalid operand (register out of bound)
+Invalid operand (invalid register name)
 Should raise ValueError

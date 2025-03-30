@@ -12,7 +12,6 @@ def issue(state): # Need to add forwarding paths!
     for entry in state["IntegerQueue"]:
         if entry["OpAIsReady"] and entry["OpBIsReady"] and len(ready_to_issue) < 4:
             ready_to_issue.append(entry)
-            # print(f"[Cycle] ISSUED: {entry['OpCode']} @PC={entry['PC']}")
         else:
             new_queue.append(entry)
 

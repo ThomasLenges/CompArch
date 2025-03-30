@@ -1,0 +1,1 @@
+Test remu instruction (logic and exception)

@@ -2,6 +2,7 @@ def rename_and_dispatch(state, decoded_instructions):
     """
     Simulates stage 1 of the pipeline
     Renames and dispatches up to 4 instructions.
+    Checks for availability to rename_and_dispatch and if need be apply backpressure
     Updates:
     - ActiveList
     - BusyBitTable (BBT)
@@ -10,7 +11,18 @@ def rename_and_dispatch(state, decoded_instructions):
     - RegisterMapTable (RMT)
     """
 
+    leftovers = []
+
     for inst in decoded_instructions:
+        if (
+            len(state["ActiveList"]) >= 32
+            or len(state["FreeList"]) == 0
+            or len(state["IntegerQueue"]) >= 32
+        ):
+            leftovers.append(inst)
+            continue
+
+    
         opcode = inst["opcode"]
         rd = inst["rd"]
         rs1 = inst["rs1"]
@@ -34,11 +46,6 @@ def rename_and_dispatch(state, decoded_instructions):
         else:
             opB_ready = not state["BusyBitTable"][physical_rs2]
             opB_value = state["PhysicalRegisterFile"][physical_rs2]
-
-        # Allocate a new physical register for destination register
-        if not state["FreeList"]:
-            print("FreeList is empty! Stalling.")
-            continue  # Could stall here, for now we skip
 
         physical_rd = state["FreeList"].pop(0)
         old_dest = state["RegisterMapTable"][rd] # For active list
@@ -70,4 +77,5 @@ def rename_and_dispatch(state, decoded_instructions):
  
         state["IntegerQueue"].append(iq_entry)
 
+    return leftovers
        

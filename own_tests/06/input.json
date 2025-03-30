@@ -1,0 +1,15 @@
+[
+    "addi x1, x0, 4",
+    "addi x2, x0, 2",
+    "addi x3, x0, 5",
+    "addi x4, x0, 2",
+
+    "remu x5, x1, x2",
+    "remu x6, x3, x4",
+    "sub x7, x5, x5",
+    "remu x9, x6, x7",
+
+    "addi x10, x10, 20",
+    "addi x11, x11, 25"
+]
+

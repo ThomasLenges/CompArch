@@ -11,7 +11,7 @@ def pipeline(state, instructions, trace):
     DIR = [] # Decoded Instruction Register
     ExecuteBuffer = [[],[]] # From issue → execute
 
-    counter = 0
+    counter = 1
 
     while (
         state["PC"] < len(instructions)
@@ -36,17 +36,22 @@ def pipeline(state, instructions, trace):
 
 
         # === Stage 1: Rename & Dispacth
-        rename_and_dispatch(state, DIR)
-        DIR = [] # consumed
+        DIR = rename_and_dispatch(state, DIR)
 
-        # === Stage 0: Fetch & Decode 
-        decoded = fetch_and_decode(state, instructions)
-        DIR.extend(decoded)
+        # === Stage 0: Fetch & Decode
+        if not DIR: 
+            decoded = fetch_and_decode(state, instructions)
+            DIR.extend(decoded)
+        if DIR:
+            state["DecodedPCs"] = [inst["PC"] for inst in DIR]
+
 
         # add new cycle to ouput
         trace.append(copy.deepcopy(state))
 
         print(f"Cycle: {counter}")
+        print(f"IQ: {len(state['IntegerQueue'])}")
+        print(f"Leftover: {DIR}")
         counter += 1
 
     return

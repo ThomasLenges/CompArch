@@ -11,7 +11,7 @@ def execute(state, issued_instructions):
     """
     executed = []
 
-    for inst in issued_instructions[:4]:  # Limit to 4 executions per cycle
+    for inst in issued_instructions:  
         op = inst["OpCode"]
         a = inst.get("OpAValue")
         b = inst.get("OpBValue")

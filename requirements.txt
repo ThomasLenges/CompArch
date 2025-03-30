@@ -1,0 +1,2 @@
+numpy
+to activate venv: source ~/venv-numpy/venv/bin/activate 

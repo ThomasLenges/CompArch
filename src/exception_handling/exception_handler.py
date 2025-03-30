@@ -12,10 +12,10 @@ def exception_handler(state, trace):
         last_entries = list(reversed(state["ActiveList"][-4:]))
     
         # clear active list and restore BBT and RMT
-        for i in range(4):
-            current_entry = last_entries[i]
-            log_reg = current_entry["LogicalDestination"]
-            phys_dest = current_entry["OldDestination"]
+        for entry in last_entries:
+
+            log_reg = entry["LogicalDestination"]
+            phys_dest = entry["OldDestination"]
 
             old_mapping = state["RegisterMapTable"][log_reg]
             if old_mapping is not None:

@@ -1,3 +1,5 @@
+import numpy as np
+
 def execute(state, issued_instructions):
     """
     Simulates stage 3 & 4 of the pipeline
@@ -24,7 +26,7 @@ def execute(state, issued_instructions):
         if op == "add":
             result = a + b
         elif op == "sub":
-            result = a - b
+            result = a - b 
         elif op == "mulu":
             result = a * b
         elif op == "divu":
@@ -50,6 +52,8 @@ def execute(state, issued_instructions):
         
         if not exception:
             state["BusyBitTable"][dest] = False
+
+        result = u64(result)
         state["PhysicalRegisterFile"][dest] = result
 
         # Forwarding path
@@ -62,3 +66,6 @@ def execute(state, issued_instructions):
                 iq_entry["OpBIsReady"] = True
                 iq_entry["OpBValue"] = result
                 iq_entry["OpBRegTag"] = 0 
+
+def u64(val):
+    return val & 0xFFFFFFFFFFFFFFFF

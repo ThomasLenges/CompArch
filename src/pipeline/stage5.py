@@ -1,14 +1,17 @@
 def commit(state):
     """
     Simulates stage 5 of the pipeline
-    Commits instructions in order from the ActiveList.
+    Commits up to 4 instructions in order from the ActiveList.
 
     Updates:
     ActiveList
     FreeList
     """
 
-    while state["ActiveList"]:
+    committed = 0
+    max_commit = 4
+
+    while state["ActiveList"] and committed < max_commit:
         entry = state["ActiveList"][0]
 
         # Handle exception
@@ -24,6 +27,7 @@ def commit(state):
             state["ActiveList"].pop(0)
             old_dest = entry["OldDestination"]
             state["FreeList"].append(old_dest)
+            committed += 1
         else:
             break
     return False 

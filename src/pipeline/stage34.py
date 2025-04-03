@@ -9,7 +9,6 @@ def execute(state, issued_instructions):
     - PhysicalRegisterFile
     - IntegerQueue
     """
-    executed = []
 
     for inst in issued_instructions:  
         op = inst["OpCode"]

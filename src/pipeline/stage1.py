@@ -11,18 +11,18 @@ def rename_and_dispatch(state, decoded_instructions):
     - RegisterMapTable (RMT)
     """
 
-    leftovers = []
+    num_insts = len(decoded_instructions)
 
-    for inst in decoded_instructions:
-        if (
-            len(state["ActiveList"]) >= 32
-            or len(state["FreeList"]) == 0
-            or len(state["IntegerQueue"]) >= 32
-        ):
-            leftovers.append(inst)
-            continue
+    can_process_all = (
+        len(state["ActiveList"]) + num_insts <= 32 and
+        len(state["FreeList"]) >= num_insts and
+        len(state["IntegerQueue"]) + num_insts <= 32
+    )
 
-    
+    if not can_process_all:
+        return decoded_instructions
+
+    for inst in decoded_instructions:    
         opcode = inst["opcode"]
         rd = inst["rd"]
         rs1 = inst["rs1"]
@@ -77,5 +77,5 @@ def rename_and_dispatch(state, decoded_instructions):
  
         state["IntegerQueue"].append(iq_entry)
 
-    return leftovers
+    return []
        

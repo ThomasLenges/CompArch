@@ -49,9 +49,8 @@ def execute(state, issued_instructions):
         
         if not exception:
             state["BusyBitTable"][dest] = False
-
-        result = u64(result)
-        state["PhysicalRegisterFile"][dest] = result
+            result = u64(result)
+            state["PhysicalRegisterFile"][dest] = result
 
         # Forwarding path
         for iq_entry in state["IntegerQueue"]:

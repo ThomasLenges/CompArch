@@ -66,7 +66,8 @@
 		false,
 		false,
 		false],
-	"DecodedPCs": [],
+	"DecodedPCs": [
+	],
 	"Exception": false,
 	"ExceptionPC": 0,
 	"FreeList": [
@@ -272,7 +273,8 @@
 		false,
 		false],
 	"DecodedPCs": [
-		0],
+		0
+	],
 	"Exception": false,
 	"ExceptionPC": 0,
 	"FreeList": [
@@ -484,7 +486,8 @@
 		false,
 		false,
 		false],
-	"DecodedPCs": [],
+	"DecodedPCs": [
+	],
 	"Exception": false,
 	"ExceptionPC": 0,
 	"FreeList": [
@@ -706,7 +709,8 @@
 		false,
 		false,
 		false],
-	"DecodedPCs": [],
+	"DecodedPCs": [
+	],
 	"Exception": false,
 	"ExceptionPC": 0,
 	"FreeList": [
@@ -917,7 +921,8 @@
 		false,
 		false,
 		false],
-	"DecodedPCs": [],
+	"DecodedPCs": [
+	],
 	"Exception": false,
 	"ExceptionPC": 0,
 	"FreeList": [
@@ -1128,7 +1133,8 @@
 		false,
 		false,
 		false],
-	"DecodedPCs": [],
+	"DecodedPCs": [
+	],
 	"Exception": false,
 	"ExceptionPC": 0,
 	"FreeList": [
@@ -1332,7 +1338,8 @@
 		false,
 		false,
 		false],
-	"DecodedPCs": [],
+	"DecodedPCs": [
+	],
 	"Exception": false,
 	"ExceptionPC": 0,
 	"FreeList": [
